@@ -1,0 +1,33 @@
+name: Push Notification
+
+on:
+    push:
+        branches:
+            -main
+            -dev-*
+            -test
+    pull_request:
+        types: [opened, synchronize, reopened, closed]        
+           
+
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send email notificationgit
+        uses: dawidd6/action-send-mail@v3
+        with:
+           server_address: smtp.gmail.com
+           server_port: 465
+           from: ${{ secrets.MAIL_FROM}}
+           to: ${{ secrets.MAIL_TO}}
+           username: ${{ secrets.MAIL_USERNAME }}
+           password: ${{ secrets.MAIL_PASSWORD }}
+           subject: ${{github.event_name}} Notification
+           body: |
+            There has been a new ${{github.event_name}} in the repository.
+            Repository : ${{github.repository}}
+            Branch : ${{github.ref}}
+            Action by : ${{github.actor}}
+            Action : ${{github.event.action}}
