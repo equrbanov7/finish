@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .element {
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            border-radius: 50%;
+        }
+        .elementOne {
+            animation: one 4s infinite;
+        }
+        .elementTwo {
+            animation: two 2s infinite;
+        }
+        .elementThree {
+            animation: three 4s infinite;
+        }
+        @keyframes one {
+            0%{
+
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(-210%);
+            }
+            50%{
+                transform: translateX(-0);
+            }
+            100%{}
+        }
+        @keyframes two {
+            0%{
+                background-color: black;
+            }
+            50%{
+            }
+            100%{
+            }
+        }
+        @keyframes three {
+            0%{
+            }
+            50%{
+                transform: translateX(0);
+
+            }
+            75%{
+                transform: translateX(210%);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="element elementOne">
+    </div>
+    <div class="element elementTwo">
+    </div>
+    <div class="element elementThree">
+    </div>
+</body>
+</html>

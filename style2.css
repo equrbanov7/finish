@@ -1,0 +1,75 @@
+body{
+    
+    height: 100vh;
+    background-color: mediumpurple;
+}
+.ContactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid black;
+    width: 400px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 5rem;
+
+}
+
+.ContactForm .ContactInfoHeader {
+    background-image: url("background.jpeg");
+    width: 100%;
+    text-align: center;
+}
+
+.ContactForm .ContactInfoHeader h1{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.ContactForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ContactForm form .formDiv{
+    position: relative;
+    display: flex;
+    width: 280px;
+    justify-content: center;
+}
+
+.ContactForm form .formDiv label{
+    text-align: center;
+}
+
+.ContactForm form .formDiv input,textarea{
+    padding: 8px 34px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.ContactForm form .formSubmit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.ContactForm form .formSubmit .submitInput{
+
+    color: #fff;
+    background-color: purple;
+    box-shadow: 10px 10px 5px rgba(189, 48, 146, 0.123);
+    border-radius: 20px;
+    padding: 8px 24px;
+
+    border: none;
+}
+
+.ContactForm form .formDiv i{
+    position: absolute;
+    left: 12px;
+    top: 7px;
+}

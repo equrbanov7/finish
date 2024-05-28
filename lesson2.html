@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="ContactForm">
+        <div class="ContactInfoHeader">
+            <h1>Contact Us</h1>
+        </div>
+        <form action="https://northwind.now.sh/api/categories" method="post">
+
+
+            <div class="formDiv">
+
+                <input type="text" id="name" name="name" placeholder="Full name">
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div class="formDiv">
+                <input type="email" id="name" name="name" placeholder="Eg example@gmail.com">
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div class="formDiv">
+                <input type="number" id="name" name="name" placeholder="+994 7046474">
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+            
+            <div class="formDiv"> 
+                <label>
+                    <input type="checkbox" name="hobby" value="reading">
+                    Reading
+                  </label>
+                  <br>
+                  <label>
+                    <input type="checkbox" name="hobby" value="travelling">
+                    Travelling
+                  </label>
+                  <br>
+                  <label>
+                    <input type="checkbox" name="hobby" value="cooking">
+                    Cooking
+                  </label>
+            </div>
+
+            <div class="formDiv">
+                <label>
+                    <input type="radio" name="gender" value="male">
+                    Male
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                  </label>
+            </div>
+
+            <div class="formDiv">
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Your Comments"></textarea>
+
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+
+
+            <div class="formSubmit">
+                <input type="submit" value="Submit" class="submitInput">
+            </div>
+
+            <!-- <input type="reset" value="Reset"> -->
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+.topClass::before {
+    content: "Hello";
+}
+
+.topClass::after {
+    content: "Good bye";
+}
+
+.topClass::first-letter {
+    color: green;
+    font-size: 20px;
+}
+
+.topClass::first-line {
+    color: red;
+}
+
+ul li::marker {
+    content: "$ ";
+    font-size: 12px;
+}
+
+ul li:last-child::grammar-error {
+
+    text-decoration: underline red;
+    color: red;
+
+}
+
+input::placeholder {
+    font-weight: bold;
+
+    color: blue;
+}
+
+p::target-text {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+input[type="file"]::file-selector-button {
+    border: 2px solid #6c5ce7;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    background-color: #a29bfe;
+    transition: 1s;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: #81ecec;
+    border: 2px solid #00cec9;
+  }
+
+  .pitem::spelling-error {
+    text-decoration: wavy red underline;
+  }
+
+  .other::selection {
+    color: red;
+    background-color: yellow;
+  }

@@ -4,12 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex facilis quidem doloribus ad non deleniti
-        expedita dolore. Aperiam, voluptatem?</p>
+
+    <div class="catchAll">
+        <nav>
+
+        </nav>
+
+        <div class="bodyController">
+            <header>
+                <form>
+                    <input type="search" placeholder="Search here">
+                </form>
+
+                <ul>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Tools</li>
+                    </a>
+                    <a href="#">
+                        <li>Help</li>
+                    </a>
+
+                </ul>
+
+                <ul>
+                    <li>Icon</li>
+                    <li>Icon</li>
+                    <li>Icon</li>
+                    <li>Icon</li>
+                </ul>
+
+
+                <div class="imgCatch">
+                    <img src="" alt="there is person image">
+                </div>
+            </header>
+
+            <section class="TableOrders">
+                <div class="infoTableHeader">
+                    <div class="info">
+                        <h3>Orders</h3>
+                        <p>Here is your order list data</p>
+                    </div>
+
+                    <div class="btns">
+                        <button>All status</button>
+                        <button>Today</button>
+                    </div>
+
+
+                </div>
+                <div class="tableOrder">
+                    <table style="width:100%">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>kjh</th>
+                            <th>ASHDF</th>
+                            <th>sajd</th>
+                            <th>sad</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Alfreds </td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                        </tr>
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+
+            <form action="https://northwind.now.sh/api/categories" method="post">
+
+                <label for="name">First name:</label><br>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="description">Description:</label><br>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+
+        </div>
+    </div>
+
+
+
+
 </body>
 
 </html>

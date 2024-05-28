@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson6</title>
+
+    <style>
+        section {
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+            gap: 16px;
+            padding: 8px 16px;
+        }
+        
+        
+
+        .textCard {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aquamarine;
+            width: 350px;
+            height: 200px;
+            padding: 8px 7px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .textCard .innerContent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 220px;
+        }
+
+        .textCard h1 {
+            transform: rotate(90deg);
+        }
+
+        .textCard .line {
+            width: 2px;
+            color: #fff;
+            background-color: #fff;
+            height: 123px;
+            margin: 10px;
+        }
+
+        section .textCard:nth-child(2){
+            background-color: beige;
+        }
+
+        section .textCard:nth-child(3){
+            background-color: rgb(220, 245, 233);
+        }
+        section .textCard:nth-child(4){
+            background-color: rgb(218, 21, 185);
+        }
+
+        .carsCard .imgCar{
+            padding-bottom: 30px;
+            transform: translateX(-80%);
+            opacity: 0;
+            animation: speed 2s  ease-in-out infinite  alternate;
+            animation-fill-mode: forwards;
+           
+           
+        
+        }
+        
+        .carsCard .imgCar img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carsCard:hover{
+            animation: speedEachCar 2s infinite ease-in-out  alternate;
+            animation-fill-mode: forwards;
+            
+        }
+
+        @keyframes speed {
+            0% {opacity: 1;
+              
+            }
+
+            25% {
+                /* transform: rotateX(90deg); */
+            }
+
+            60%{}
+            50% {
+                opacity: 1;
+                transform: translateX(0);
+                transform: rotateY(180deg);
+              
+            }
+
+            100% {
+                opacity: 1;
+                /* transform: rotateX(0deg); */
+                transform: translateX(0);
+                transform: rotateY(180deg);
+            }
+           
+        }
+        @keyframes speedEachCar {
+            0% {
+              
+            }
+
+            25% {
+                /* transform: rotateX(90deg); */
+            }
+
+            60%{}
+            50% {
+                transform: translateY(-20%);
+              
+            }
+
+            100% {
+                transform: translateY(-20%);
+                transform: translateX(0);
+                transform: rotateY(0deg);
+            }
+           
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="textCard">
+
+            <div class="innerContent">
+                <h1>
+                    Title
+                </h1>
+                <div class="line"></div>
+                <div class="cardContent">
+                    <p>Lorem ipsum doltque? Illo odio unde a sinupiditate repellat nisi et nostrum libero voluptates nam
+                        ullam? Aliquam
+                        porro
+                        sit odit nam, deserunt harum voluptas nesciunt!`</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="textCard">
+
+            <div class="innerContent">
+                <h1>
+                    Title
+                </h1>
+                <div class="line"></div>
+                <div class="cardContent">
+                    <p>Lorem ipsum doltque? Illo odio unde a sinupiditate repellat nisi et nostrum libero voluptates nam
+                        ullam? Aliquam
+                        porro
+                        sit odit nam, deserunt harum voluptas nesciunt!`</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="textCard">
+
+            <div class="innerContent">
+                <h1>
+                    Title
+                </h1>
+                <div class="line"></div>
+                <div class="cardContent">
+                    <p>Lorem ipsum doltque? Illo odio unde a sinupiditate repellat nisi et nostrum libero voluptates nam
+                        ullam? Aliquam
+                        porro
+                        sit odit nam, deserunt harum voluptas nesciunt!`</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="textCard">
+
+            <div class="innerContent">
+                <h1>
+                    Title
+                </h1>
+                <div class="line"></div>
+                <div class="cardContent">
+                    <p>Lorem ipsum doltque? Illo odio unde a sinupiditate repellat nisi et nostrum libero voluptates nam
+                        ullam? Aliquam
+                        porro
+                        sit odit nam, deserunt harum voluptas nesciunt!`</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="textCard carsCard">
+            <div class="imgCar">
+                <img src="car.png" alt="car">
+            </div>
+        </div>
+        <div class="textCard carsCard">
+            <div class="imgCar">
+                <img src="car.png" alt="car">
+            </div>
+        </div>
+        <div class="textCard carsCard">
+            <div class="imgCar">
+                <img src="car.png" alt="car">
+            </div>
+        </div>
+        <div class="textCard carsCard">
+            <div class="imgCar">
+                <img src="car.png" alt="car">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+header .logoTitle{
+    padding: 0;
+    margin: 0;
+}
+
+header .AuthAndNavbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 24px;
+}
+
+header .auth {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+}
+
+header .auth i {
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #EDEDED;
+}
+
+header .btnFollow button {
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+}
+
+header .burgerMenu {
+    background: #000;
+    padding: 4px;
+    border-radius: 2px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .burgerMenu i {
+    color: #fff;
+}
+
+
+
+
+.topInformation {
+    padding: 8px 0px;
+    height: 400px;
+    padding-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+
+}
+
+.topInformation .AllSides {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    height: 100%;
+}
+
+
+.topInformation .leftSide {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topInformation .leftSide .getInfo{
+ 
+    width: 320px;
+}
+
+.topInformation .leftSide .getInfo h1 {
+    font-weight: 900;
+
+}
+
+.topInformation .leftSide .getInfo p {
+    font-weight: 400;
+
+
+}
+
+.topInformation .leftSide .getInfo button {
+    background-color: #1f1f1f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+
+
+}
+
+.topInformation .rightSide {
+    background-color: gray;
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.topInformation .rightSide .imgCatch {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    margin: auto;
+}
+
+.topInformation .rightSide .imgCatch img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.experienceAll {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    position: relative;
+    top: -34px;
+}
+
+.experienceAll .AllExpes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.experienceAll .AllExpes .experienceitle {
+    width: 370px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experienceAll .AllExpes .expCards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+
+.experienceAll .AllExpes .expCards .ExpCard {
+    width: 250px;
+    height: max-content;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experienceAll .AllExpes .expCards .ExpCard .ImgCatch {
+    width: 100%;
+    height: 180px;
+}
+
+.experienceAll .AllExpes .expCards .ExpCard .ImgCatch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.experienceAll .AllExpes .expCards .ExpCard .infoImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bottomSection{
+    position: relative;
+    top: -34px;
+}
+.bottomSection .AllSides{
+    flex-direction: row-reverse;
+}

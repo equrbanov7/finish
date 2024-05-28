@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .elements {
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            animation: upBox 6s alternate;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .element {
+            width: 240px;
+            height: 80px;
+            background-color: orangered;
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 16px;
+            color: #fff;
+            max-height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        .element div {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            color: #fff;
+            opacity: 0;
+        }
+
+        .elementOne {
+            transform: translateX(-210%);
+            animation: one 2s alternate, upBox 6s alternate, expandBox 1s alternate;
+            animation-fill-mode: forwards;
+            animation-delay: 0s, 3s, 6s;
+        }
+
+        .elementTwo {
+            opacity: 0;
+            transform: translateX(-210%);
+            background-color: black;
+            position: relative;
+            animation: two 2s alternate, upBox 6s alternate, expandBox 1s alternate;
+            animation-fill-mode: forwards;
+            animation-delay: 0s, 3s, 6s;
+
+        }
+
+        .elementThree {
+            opacity: 0;
+            transform: translateX(-210%);
+            animation: three 4s alternate, upBox 6s alternate, expandBox 1s alternate;
+            animation-fill-mode: forwards;
+            animation-delay: 0s, 3s, 6s;
+        }
+
+        @keyframes one {
+            0% {}
+
+            25% {}
+
+            50% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes two {
+            0% {}
+
+            25% {}
+
+            50% {}
+
+            75% {
+                transform: translateX(0);
+            }
+
+            100% {
+                background-color: black;
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes three {
+            0% {}
+
+            25% {}
+
+            50% {
+                transform: translateX(0);
+            }
+
+            75% {
+                transform: translateX(0);
+            }
+
+            100% {
+                background-color: green;
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes upBox {
+            0% {}
+
+
+            25% {}
+
+            40% {
+                margin-bottom: 12rem;
+
+            }
+
+            45% {}
+
+            50% {}
+
+            75% {}
+
+            100% {
+
+                margin-bottom: 12rem;
+
+            }
+
+        }
+
+        @keyframes expandBox {
+            0% {}
+
+
+            25% {}
+
+            40% {}
+
+            45% {}
+
+            50% {}
+
+            75% {}
+
+            100% {
+
+                opacity: 1;
+                height: 340px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="elements">
+        <div class="element elementOne">
+            Box1
+            <div>
+                <h5>Home</h5>
+                <h5>Categories</h5>
+                <h5>Products</h5>
+            </div>
+        </div>
+        <div class="element elementTwo">
+            Box2
+            <div>
+                <h5>Home</h5>
+                <h5>Categories</h5>
+                <h5>Products</h5>
+            </div>
+        </div>
+        <div class="element elementThree">
+            Box3
+            <div>
+                <h5>Home</h5>
+                <h5>Categories</h5>
+                <h5>Products</h5>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

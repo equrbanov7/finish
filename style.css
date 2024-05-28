@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    
+}
+
+header form{
+    width: 326px;
+}
+
+header form input{
+    width: 100%;
+    padding: 8px 16px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+
+}
+
+section.TableOrders .infoTableHeader{
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    
+    
+}
+
+table, th, td {
+    border:1px solid black;
+  }
+
