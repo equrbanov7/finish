@@ -1,0 +1,21 @@
+// Define a map for colors
+$colors: (
+  primary: #3498db,
+  secondary: #2ecc71,
+  success: #28a745,
+  danger: #dc3545,
+  warning: #ffc107,
+  info: #17a2b8,
+  light: #f8f9fa,
+  dark: #343a40,
+  text-primary: #333,
+  text-secondary: #666,
+  text-muted: #999,
+  background: #ffffff,
+  border: #dddddd,
+);
+
+// Function to access colors from the map
+@function color($key) {
+  @return map-get($colors, $key);
+}

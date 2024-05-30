@@ -1,0 +1,9 @@
+@import "./variables.scss";
+
+div {
+  h1 {
+    display: inline;
+    background-color: color(secondary);
+    color: color(light);
+  }
+}
